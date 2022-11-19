@@ -1,0 +1,18 @@
+-- create
+CREATE TABLE STUDENT (
+  Studentid int NOT NULL AUTO_Increment,
+  name text NOT NULL,
+  age int,
+  adress text,
+  
+  PRIMARY KEY (Studentid)
+);
+
+-- insert
+INSERT INTO STUDENT VALUES(0001, 'Anna', 34, 'Moscow');
+INSERT INTO STUDENT VALUES (0002, 'Lisa', 16, 'Moscow');
+INSERT INTO STUDENT VALUES (0003, 'Leo', 18, 'Kazan');
+INSERT INTO STUDENT VALUES(0004, 'Oleg', 40, 'Tula');
+
+-- fetch 
+SELECT * FROM STUDENT WHERE adress = 'Kazan';
